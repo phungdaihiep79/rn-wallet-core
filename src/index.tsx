@@ -17,6 +17,6 @@ const RnWalletCore = NativeModules.RnWalletCore
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return RnWalletCore.multiply(a, b);
+export function createWallet(mnemonic: string): Promise<any> {
+  return RnWalletCore.createWallet(mnemonic);
 }
