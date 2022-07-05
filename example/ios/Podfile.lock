@@ -300,8 +300,12 @@ PODS:
   - React-jsinspector (0.68.2)
   - React-logger (0.68.2):
     - glog
+  - react-native-get-random-values (1.8.0):
+    - React-Core
   - react-native-rn-wallet-core (0.1.0):
     - React-Core
+    - SwiftProtobuf
+    - TrustWalletCore (~> 2.9.5)
   - React-perflogger (0.68.2)
   - React-RCTActionSheet (0.68.2):
     - React-Core/RCTActionSheetHeaders (= 0.68.2)
@@ -368,6 +372,13 @@ PODS:
     - React-logger (= 0.68.2)
     - React-perflogger (= 0.68.2)
   - SocketRocket (0.6.0)
+  - SwiftProtobuf (1.19.0)
+  - TrustWalletCore (2.9.5):
+    - TrustWalletCore/Core (= 2.9.5)
+  - TrustWalletCore/Core (2.9.5):
+    - TrustWalletCore/Types
+  - TrustWalletCore/Types (2.9.5):
+    - SwiftProtobuf
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -418,6 +429,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
   - react-native-rn-wallet-core (from `../..`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -450,6 +462,8 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - SwiftProtobuf
+    - TrustWalletCore
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -491,6 +505,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-get-random-values:
+    :path: "../node_modules/react-native-get-random-values"
   react-native-rn-wallet-core:
     :path: "../.."
   React-perflogger:
@@ -554,7 +570,8 @@ SPEC CHECKSUMS:
   React-jsiexecutor: b7b553412f2ec768fe6c8f27cd6bafdb9d8719e6
   React-jsinspector: c5989c77cb89ae6a69561095a61cce56a44ae8e8
   React-logger: a0833912d93b36b791b7a521672d8ee89107aff1
-  react-native-rn-wallet-core: dd89864a265ae4e9a86ab299fb7d1fcd77ce1d39
+  react-native-get-random-values: a6ea6a8a65dc93e96e24a11105b1a9c8cfe1d72a
+  react-native-rn-wallet-core: 78476816e7632336ca4e988ff0ca941e917b3221
   React-perflogger: a18b4f0bd933b8b24ecf9f3c54f9bf65180f3fe6
   React-RCTActionSheet: 547fe42fdb4b6089598d79f8e1d855d7c23e2162
   React-RCTAnimation: bc9440a1c37b06ae9ebbb532d244f607805c6034
@@ -568,9 +585,11 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: b960b687d2dfef0d3761fbb187e01812ebab8b23
   ReactCommon: 095366164a276d91ea704ce53cb03825c487a3f2
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  SwiftProtobuf: 6ef3f0e422ef90d6605ca20b21a94f6c1324d6b3
+  TrustWalletCore: 52ec9b10c17c8d7443e848ff0e6adac4d39be9f0
   Yoga: 99652481fcd320aefa4a7ef90095b95acd181952
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 5f1b1c578f32c5f3e6b1a2565911eec3bc73315b
+PODFILE CHECKSUM: 1c9c2282308b6ec62685d76f6c18ec0cbc6eb65e
 
 COCOAPODS: 1.11.3

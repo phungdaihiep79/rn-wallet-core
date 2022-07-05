@@ -1,4 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
+import type { RnWalletCoreType } from './types';
 
 const LINKING_ERROR =
   `The package 'react-native-rn-wallet-core' doesn't seem to be linked. Make sure: \n\n` +
@@ -17,6 +18,5 @@ const RnWalletCore = NativeModules.RnWalletCore
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return RnWalletCore.multiply(a, b);
-}
+export default RnWalletCore as RnWalletCoreType;
+export * from './types';
